@@ -1,29 +1,73 @@
-# Next.js + Tailwind CSS Example
+# Project name: Weddinger
+___
+# Team name: PyPandas
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Team members:
+### [Abed alaziz alsalahat](https://github.com/abdalazzezzalsalahat)
+### [Faisal abuzaid](https://github.com/faisalabuzaid)
+### [Muhannad almughrabi](https://github.com/mhn998)
+### [Noor Omari](https://github.com/nooromari)
+### [Tala Hajeer](https://github.com/talahajeer)
+____
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
-## Preview
+<p align="center">
+  <a href="https://github.com/organs-2021/Weddinger"><img src="https://cdn.picpng.com/wedding/pic-wedding-41304.png" alt="Mask catcher"></a>
+</p>
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<p align="center">
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+<a href="https://github.com/organs-2021/no-mask-catcher" target="_blank">
+    <img src="https://img.shields.io/codecov/c/github/tiangolo/fastapi?color=%2334D058" alt="Coverage">
+</a>
 
-## Deploy your own
+<a href="https://pypi.org/project/tensorflow/" target="_blank">
+    <img src="https://img.shields.io/pypi/v/fastapi?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<a href="https://pypi.org/project/tensorflow/" target="_blank">
+    <img src="https://img.shields.io/pypi/v/fastapi?color=%2334D058&label=pypi%20tensorflow" alt="Package version">
+</a>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+<a href="https://pypi.org/project/cmake/" target="_blank">
+    <img src="https://img.shields.io/pypi/v/fastapi?color=%2922D228&label=pypi%20CMake" alt="Package version">
+</a>
 
-## How to use
+<a href="https://twitter.com/intent/follow?screen_name=chrisatmachine">
+      <img src="https://img.shields.io/twitter/follow/chrisatmachine?style=social&logo=twitter" alt="follow on Twitter">
+</a>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+</p>
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+___
+
+<br>
+
+# Synopsis: 
+
+<h3>A wedding arrangement website that allows the user to book any wedding hall for their event(wedding, party, etc...) and choose ant setup as they wish. choosing photographer, wedding hall accessories (flowers, sheets, lights, etc...), Cake, etc...</h3>
+<br>
+
+## Mission:
+
+<h3>To make wedding planning easier, and to make 
+this more modern and automated.</h3>
+
+<br>
+
+
+# Wireframe 
+
+[Link to Wireframe](https://www.figma.com/file/4ERBnikLrXsMIHMzdNBXFw/Weddinger)
+
+
+# Project management tool
+[Trello link](https://trello.com/b/XWf12hoC)
+
+# Domain model
+![Domain model](assets/DFD_weddingers.png)
+
+## Entity Relation Diagram (Database schema Diagram)
+![ER Diagram](assets/ER_Diagram.png)
+
