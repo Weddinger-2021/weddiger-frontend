@@ -1,4 +1,41 @@
-let categories = ["Venues","Flowers","Cars","Makeup Artists","Beauty Salons","Photographers","Dresses","Suits","Honeymoon"]
+let categories = [
+            {
+                name: "Venues",
+                image:"/img/venue.jpg"
+            },
+           {
+                name: "Flowers",
+                image:"/img/flowers.jpg"
+            },
+            {
+                name: "Cars",
+                image: "/img/cars.jpg"
+            },
+            {
+                name: "Makeup Artists",
+                image: "/img/Makeup-Artist.jpg"
+            },
+            {
+                name: "Beauty Salons",
+                image: "/img/beauty-salon.jpg"
+            },
+            {
+                name: "Photographers",
+                image: "/img/Photography.jpg"
+            },
+            {
+                name: "Dresses",
+                image: "/img/dresses.jpg"
+            },
+            {
+                name: "Suits",
+                image :"/img/suits.jpg"
+            },
+            {
+                name: "Honeymoon",
+                image :"/img/honeymoon.jpg"
+            }    
+            ]
 
 let providers = {
     provider1 : {
