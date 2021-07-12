@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import WeddHead from '../components/basic/WeddHead'
 import Header from '../components/basic/Header'
 import Footer from '../components/basic/Footer'
@@ -6,7 +7,7 @@ import Image  from 'next/dist/client/image'
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen justify-between" >
+    <div className="flex flex-col justify-between h-screen" >
       <WeddHead title ="Landing Page" />
       < Header />
       <main className="relative" >
