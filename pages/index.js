@@ -18,7 +18,7 @@ export default function Home() {
       width={650}
       height={400}
     />
-    <div className="absolute top-20 left-10 w-2/6 bg-red-50 p-5 rounded-lg">
+    <div className="absolute top-20 left-10 w-2/6 bg-red-50 p-5 rounded-lg shadow-lg">
       <h3 className="font-text text-2xl text-green-700 p-2" >Our business is making memories</h3>
       <p className="font-text text-gray-500" >Thank you for letting us share in this joyful day. We wish you all the best as you embark on this wonderful union.</p>
     </div>
