@@ -4,6 +4,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    zIndex: {
+          '-1': -1,
+        },
+    fontFamily: {
+      "text": 'Indie Flower, cursive',
+      'h': 'Rochester, cursive',
+      'head1':['Sevillana', 'cursive'],
+    }
   },
   variants: {
     extend: {},
