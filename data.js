@@ -52,8 +52,8 @@ let providers = {
     }
 }
 
-let services_venues = {
-    venue1 :{
+let services_venues = [
+    {
         category: "venue",
         title:"View",
         provider: providers.provider1,
@@ -62,7 +62,7 @@ let services_venues = {
         descrption : "A venue located by the sea with amazing view and capacity of 100 guests",
         images_path: ["/img/wedding-venues-feature.png","/img/sea-venue.jpg"]
     },
-    venue2 :{
+    {
         category: "venue",
         title:"White",
         provider: providers.provider2,
@@ -71,6 +71,6 @@ let services_venues = {
         descrption : "A venue located at Airport road with capacity of 150 guests",
         images_path: ["/img/Fitroy+wedding+venue.jpg"]
     }
-}
+]
 
-module.exports = categories;
+module.exports = {categories,providers,services_venues};
