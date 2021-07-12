@@ -2,8 +2,8 @@ export default function ServiceForm() {
     return (
         <>
             <div className="w-6/12 mt-20 mb-20 ml-auto mr-auto sm:mt-0">
-                <div className=" md:grid md:grid-cols-2 md:gap-6">
-                    <div className="mt-5 md:mt-0 md:col-span-2">
+                <div className="mt-20 md:grid md:grid-cols-2 md:gap-6">
+                    <div className="mt-20 md:mt-0 md:col-span-2">
                         <form className="ml-auto mr-auto " action="#" method="POST ">
                             <div className="overflow-hidden shadow sm:rounded-md">
                                 <div className="px-4 py-5 bg-white sm:p-6">
