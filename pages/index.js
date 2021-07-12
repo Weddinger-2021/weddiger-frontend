@@ -4,7 +4,7 @@ import Footer from '../components/basic/Footer'
 
 export default function Home() {
   return (
-    <div >
+    <div className="flex flex-col h-screen justify-between" >
       <WeddHead title ="Landing Page" />
       < Header />
       < Footer />
