@@ -9,39 +9,19 @@ import { fetchData } from "../api/api_get_post";
 
 export default function category_group() {
     const [categories, setCategories] = useState([]);
-    const [isLogin, setIsLogin] = useState(false);
+    // const [isLogin, setIsLogin] = useState(true);
     
-    const [token, setToken] = useState('');
-    
-    // useEffect(() => {
-    //     localStorage.setItem('accessToken', token);
-    // }, [token]);
-
-    function handelSubmit(e){
-        e.preventDefault();
-        const loginInfo = {
-            email : e.target.email.value ,
-            password : e.target.password.value,
-          };
-          getData(loginInfo)
-        setIsLogin(true)
-      }
-
-     async function getData(loginInfo) {
-        setCategories(await fetchData(loginInfo,'categories'));
+    // const [token, setToken] = useState('');
+    async function getCat(){
+        setCategories(await fetchData('categories'));
     }
-
-    if (isLogin){
+    getCat()
     return (
-        <div className="flex flex-col h-screen justify-between" >
+        <div className="flex flex-col justify-between h-screen" >
             <WeddHead title="Categories" />
             < Header />
             <Category categories={categories} />
             < Footer />
         </div>
-    )}else{
-        return(
-            <Login isLogin={isLogin} handelSubmit={handelSubmit} />
-        )
-    }
+    )
 }

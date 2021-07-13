@@ -1,19 +1,33 @@
 import Image from 'next/image';
-import Link from 'next/link';
-
+import axios from 'axios';
+import { useState } from 'react';
+import Service from './service';
 
 export default function Category ({categories}){
-    return (
+  const [result, setResult] = useState([])
+  const [id, setId] = useState(0)
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+    const req = `https://weddinger.herokuapp.com/category/services/${e.target.cat.value}`
+    const res = await axios.get(req)
+    setResult(res.data)
+    setId(e.target.cat.value)
+
+  }
+    return ( id > 0 ?
+      <Service list={result}/>
+      :<>
         <div className = "flex flex-wrap">
           {categories.map((category,i) =>
           <section key={i} >
-            <Image src={category.imgs_directory_path} alt="Picture of category" height="200px" width="200px" />            
-            <h2>{category.name}</h2>
-            <Link href='/client/Services'>
-            <a className="bg-gray-100 text-gray-800 rounded-lg mr-4 pb-1 pl-1 pr-1 text-l float-right " >Services</a>
-            </Link>        
+            <img src={category.imgs_directory_path} alt="Picture of category" height="200px" width="200px" />            
+            <form onSubmit={handleSubmit}>
+              <input type='hidden' value={category.id} name='cat'></input>
+              <button type='submit'>{category.name}</button>
+            </form>       
         </section>
       )}
       </div>
-    )
+    </>)
 }

@@ -1,19 +1,36 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import axios from 'axios';
+import { useState } from 'react';
+import ServiceDetail from './serviceDetail';
 
+export default function Service ({list}) {
+  
+  const [result, setResult] = useState([])
+  const [id, setId] = useState(false)
 
-export default function Service ({services_venues}){
-    return (
+  async function handleSubmit(e) {
+    e.preventDefault()
+    const req = `https://weddinger.herokuapp.com/service/${e.target.cat.value}`
+    const res = await axios.get(req)
+    setResult(res.data)
+    setId(true)
+
+  }
+    return ( id  ?
+      <ServiceDetail service={result}/>
+      :<>
         <div className = "flex flex-wrap">
-          {services_venues.map((service,i) =>
+          {list.map((ele,i) =>
           <section key={i} >
-            <Image src={service.images_path[0]} alt="Picture of category" height="200px" width="200px" />            
-            <h2>{service.title}</h2>
-            <Link href='/ServiceDetail'>
-            <a className="bg-gray-100 text-gray-800 rounded-lg mr-4 pb-1 pl-1 pr-1 text-l float-right " >Service Details</a>
-            </Link>        
+            <img src={ele.imgs_directory_path} alt="Picture of category" height="200px" width="200px" /> 
+            <h2>{ele.title}</h2>
+            <h2> from {ele.min_price} to {ele.max_price}</h2>      
+            <form onSubmit={handleSubmit}>
+              <input type='hidden' value={ele.id} name='cat'/>
+              <button type='submit'> {ele.title} </button>
+            </form>       
         </section>
       )}
       </div>
-    )
+    </>)
 }
+
