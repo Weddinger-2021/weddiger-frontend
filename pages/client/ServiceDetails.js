@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import Service from "../../components/service";
+import Service from "../../components/serviceComp";
 import WeddHead from '../../components/basic/WeddHead'
 import Header from '../../components/basic/Header'
 import Footer from '../../components/basic/Footer'
