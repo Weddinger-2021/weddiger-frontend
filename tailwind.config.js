@@ -8,10 +8,11 @@ module.exports = {
           '-1': -1,
         },
     fontFamily: {
-      "text": 'Indie Flower, cursive',
-      'h': 'Rochester, cursive',
+      "text": ['Indie Flower', 'cursive'],
+      'h': ['Rochester', 'cursive'],
       'head1':['Sevillana', 'cursive'],
-    }
+      'sat': ['Satisfy', 'cursive'],
+    },
   },
   variants: {
     extend: {},
