@@ -6,6 +6,7 @@ export default function Category ({categories}){
     return (
         <div className = "flex flex-wrap">
           {categories.map((category,i) =>
+<<<<<<< HEAD
           <section key={i} class="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden" >
 
             <div class="flex items-end justify-end h-56 w-full bg-cover">
@@ -16,6 +17,11 @@ export default function Category ({categories}){
               <h3 class="text-gray-700 uppercase">{category.name}</h3>
             </div>
 
+=======
+          <section key={i} >
+            <Image src={category.imgs_directory_path} alt="Picture of category" height="200px" width="200px" />            
+            <h2>{category.name}</h2>
+>>>>>>> test
             <Link href='/client/Services'>
             <a className="bg-gray-100 text-gray-800 rounded-lg mr-4 pb-1 pl-1 pr-1 text-l float-right " >Services</a>
             </Link>        
