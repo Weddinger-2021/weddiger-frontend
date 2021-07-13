@@ -4,6 +4,7 @@ import Header from '../components/basic/Header'
 import Footer from '../components/basic/Footer'
 import Image  from 'next/dist/client/image'
 
+// import {login} from '../pages/api/hello'
 export default function Home() {
   return (
     <div className="flex flex-col justify-between h-screen" >
@@ -31,3 +32,4 @@ export default function Home() {
     </div>
   )
 }
+
