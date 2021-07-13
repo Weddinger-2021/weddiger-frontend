@@ -2,6 +2,7 @@ import WeddHead from '../components/basic/WeddHead'
 import Header from '../components/basic/Header'
 import Footer from '../components/basic/Footer'
 import Image  from 'next/dist/client/image'
+import Link from 'next/link';
 
 export default function Home() {
   return (

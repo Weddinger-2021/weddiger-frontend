@@ -6,6 +6,8 @@ import Header from '../../components/basic/Header'
 import Footer from '../../components/basic/Footer'
 import Login from "../../components/Login";
 import { fetchData } from "../api/api_get_post";
+import Link from 'next/link';
+
 
 export default function category_group() {
     const [categories, setCategories] = useState([]);
@@ -27,8 +29,8 @@ export default function category_group() {
         setIsLogin(true)
       }
 
-     async function getData(loginInfo) {
-        setCategories(await fetchData(loginInfo,'categories'));
+     async function getData() {
+        setCategories(await fetchData('categories'));
     }
 
     if (isLogin){
