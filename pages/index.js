@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import WeddHead from '../components/basic/WeddHead'
 import Header from '../components/basic/Header'
 import Footer from '../components/basic/Footer'
