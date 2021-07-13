@@ -7,12 +7,6 @@ export async function login(loginInfo) {
     return res
 }
 
-export async function getToken(loginInfo){
-    const res = await axios.post(`${base_url}/api/token/`, loginInfo);
-    const { refresh, access } = res.data;
-    return access
-}
-
 export async function fetchData(req) {
     try {
         const response = await axios.get(`${base_url}/${req}/`);
