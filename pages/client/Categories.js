@@ -23,15 +23,15 @@ export default function category_group() {
             email : e.target.email.value ,
             password : e.target.password.value,
           };
-          getData(loginInfo)
         setIsLogin(true)
       }
 
-     async function getData(loginInfo) {
-        setCategories(await fetchData(loginInfo,'categories'));
+     async function getData(data) {
+        setCategories(await fetchData(data));
     }
 
     if (isLogin){
+        { getData('categories')}
     return (
         <div className="flex flex-col h-screen justify-between" >
             <WeddHead title="Categories" />

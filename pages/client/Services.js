@@ -1,4 +1,4 @@
-import Service from "../../components/service";
+import Service from "../../components/serviceComp";
 import {services_venues} from '../../data'
 import WeddHead from '../../components/basic/WeddHead'
 import Header from '../../components/basic/Header'
@@ -12,7 +12,6 @@ export default function services() {
             <Service services_venues={services_venues} />
             < Footer />
         </div>
-
 
     )
 }
