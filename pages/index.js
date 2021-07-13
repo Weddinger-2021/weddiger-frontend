@@ -9,7 +9,8 @@ export default function Home() {
       <WeddHead title ="Landing Page" />
       < Header />
       {/* this link should be in service provider dashboard */}
-      <button><Link href="/serviceProvider/ServiceAdd">Service Add Form</Link></button>
+      <button><Link href="/serviceProvider/ProviderDash">dashboard page</Link></button>
+      
       < Footer />
     </div>
   )
