@@ -18,7 +18,6 @@ export default function category_group() {
   
     return (
         <div className="flex flex-col justify-between h-screen" >
-            {console.log(categories) }
             <WeddHead title="Categories" />
             < Header isLogin={isLogin} />
             <div className="text-center p-5 pt-20 font-sat text-green-700 text-2xl" >
