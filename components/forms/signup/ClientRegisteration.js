@@ -1,9 +1,21 @@
 import React from 'react'
+import {postData} from '../../../pages/api/api_get_post'
 
 export default function ClientRegisteration() {
+
+    function signUp(e){
+        e.preventDefault()
+        const signData = {
+            email: e.target.email.value,
+            password: e.target.password.value,
+            username: e.target.username.value,
+        }
+        postData(signData, 'regclient')
+    }
+
     return (
         <div className="md:w-full max-w-2xl mx-auto px-4 py-5 shadow-none">
-            <form action="#" className="p-0">
+            <form onSubmit={signUp} className="p-0">
                 {/* email */}
                 <div className="mt-5">
                     <label htmlFor="email" className="sc-bqyKva ePvcBv">Email</label>
@@ -32,7 +44,7 @@ export default function ClientRegisteration() {
                     </span>
                 </div>
                 <div className="mt-10">
-                    <input type="submit" value="Sign up with email" className="py-3 bg-green-500 text-white w-full rounded hover:bg-green-600"/>
+                    <button type="submit" className="py-3 bg-green-500 text-white w-full rounded hover:bg-green-600">Sign up</button>
                 </div>
             </form>
         </div>

@@ -1,10 +1,24 @@
 import React from 'react'
 import InputMask from "react-input-mask";
+import {postData} from '../../../pages/api/api_get_post'
 
 export default function ProviderRegistration() {
+
+    function signUp(e){
+        e.preventDefault()
+        const signData = {
+            email: e.target.email.value,
+            password: e.target.password.value,
+            username: e.target.username.value,
+            company_name: e.target.company_name.value,
+            phone: e.target.phone.value,
+            location: e.target.location.value,
+        }
+        postData(signData, 'regprovider')
+    }
     return (
         <div className="md:w-1/2 max-w-lg mx-auto px-4 py-5 shadow-none">
-            <form action="#" className="p-0">
+            <form onSubmit={signUp} className="p-0">
                 
                 {/* email */}
                 <div className="mt-5">
@@ -58,7 +72,8 @@ export default function ProviderRegistration() {
                     </span>
                 </div>
                 <div className="mt-10">
-                    <input type="submit" value="Sign up with email" className="w-full bg-transparent hover:bg-green-600 text-green-400 font-semibold hover:text-white py-2 px-4 border border-green-400 hover:border-transparent rounded"/>
+                    
+                    <button type="submit" className="w-full bg-transparent hover:bg-green-600 text-green-400 font-semibold hover:text-white py-2 px-4 border border-green-400 hover:border-transparent rounded"> Sign up</button>
                 </div>
             </form>
         </div>
