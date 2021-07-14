@@ -1,6 +1,5 @@
-import ProvideService from './ProviderService'
 
-export default () => {
+export default function ProviderHeader({providerInfo}) {
     return (
         <>
         <div className="flex flex-wrap w-3/12 h-screen bg-gray-100">
@@ -8,7 +7,7 @@ export default () => {
                 <div className="flex items-center p-2 mb-5 space-x-4">
                     <img className="h-12 rounded-full" src="http://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp" alt="James Bhatta" />
                     <div>
-                        <h4 className="text-lg font-semibold tracking-wide text-gray-700 capitalize font-poppins">James Bhatta</h4>
+                        <h4 className="text-lg font-semibold tracking-wide text-gray-700 capitalize font-poppins">{providerInfo.username}</h4>
                         <span className="flex items-center space-x-1 text-sm tracking-wide">
                             <svg className="h-4 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
