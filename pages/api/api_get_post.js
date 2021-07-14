@@ -16,3 +16,10 @@ export async function fetchData(req) {
     }
 }
 
+export async function postData(data, req) {
+    try {
+        const response = await axios.post(`${base_url}/${req}/`, data);
+    } catch (error) {
+        console.log(error)
+    }
+}
