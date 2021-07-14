@@ -23,3 +23,19 @@ export async function postData(data, req) {
         console.log(error)
     }
 }
+
+async function delete_data(id){
+    const response = await getToken(props.username,props.password)
+    const {access:token,refresh} = response.data
+    const url = baseURL+apiData+id
+    const config = {
+        headers:{
+            Authorization: `Bearer ${token}`
+        }
+    }
+    return axios.delete(url,config)
+}
+
+
+
+
