@@ -6,7 +6,7 @@ import WeddHead from '../../components/basic/WeddHead'
 import Header from '../../components/basic/Header'
 import Footer from '../../components/basic/Footer'
 import {services_venues} from '../../data'
-import ServiceDetails from '../../components/ServiceDetailsComponent'
+import ServiceDetails from '../../components/serviceDetailcomp'
 
 export default () => {
 
