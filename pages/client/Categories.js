@@ -10,12 +10,11 @@ import { fetchData } from "../api/api_get_post";
 export default function category_group() {
     const [categories, setCategories] = useState([]);
     // const [isLogin, setIsLogin] = useState(true);
-    
-    // const [token, setToken] = useState('');
-    async function getCat(){
+    useEffect( async () => {
         setCategories(await fetchData('categories'));
-    }
-    getCat()
+      },[])
+    // const [token, setToken] = useState('');
+  
     return (
         <div className="flex flex-col justify-between h-screen" >
             <WeddHead title="Categories" />
