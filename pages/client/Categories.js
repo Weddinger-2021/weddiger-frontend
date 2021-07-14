@@ -21,6 +21,9 @@ export default function category_group() {
             {console.log(categories) }
             <WeddHead title="Categories" />
             < Header isLogin={isLogin} />
+            <div className="text-center p-5 pt-20 font-sat text-green-700 text-2xl" >
+                <h2>Here we go, see the list of the categories</h2>
+            </div>
             <Category categories={categories} />
             < Footer />
         </div>

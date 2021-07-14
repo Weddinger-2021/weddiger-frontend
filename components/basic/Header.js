@@ -13,11 +13,11 @@ export default function Header({ isLogin }) {
               <h1 className=" font-head1 text-3xl text-center text-green-700 font-bold" >Weddinger</h1>
             </div>
           </Link>
-          <div className="flex justify-between">
+          <div className="flex justify-between text-xs">
             {isLogin ? 
-              <Link href="/LogOut" ><a className="mx-5 px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700">Log Out</a></Link>          
+              <Link href="/LogOut" ><a className="mx-5 px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700">Log Out</a></Link>          
               :   
-              <Link href="/Login" ><a className="mx-5 px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700">Log in</a></Link>          
+              <Link href="/Login" ><a className="mx-5 px-2 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-600 hover:bg-green-700">Log in</a></Link>          
                }
           </div></div>
       </nav>
