@@ -12,6 +12,7 @@ module.exports = {
       'h': ['Rochester', 'cursive'],
       'head1':['Sevillana', 'cursive'],
       'sat': ['Satisfy', 'cursive'],
+      'h2':['Lobster', 'cursive']
     },
   },
   variants: {
