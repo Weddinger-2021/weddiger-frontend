@@ -3,29 +3,29 @@
 export default function Footer() {
   return (
     <div className="" >
-      <footer className="bg-red-50 py-8 sm:py-12">
+      <footer className="bg-red-50 py-3 sm:py-6 font-h2 text-green-900">
         <div className="container mx-auto px-4">
           <div className="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
             <div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
               <h5 className="text-xl font-bold mb-6">Features</h5>
               <ul className="list-none footer-links">
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Cool stuff</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Cool stuff</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Random feature</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Random feature</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team feature</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Team feature</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Stuff for developers</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Stuff for developers</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another one</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Another one</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Last time</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Last time</a>
                 </li>
               </ul>
             </div>
@@ -33,16 +33,16 @@ export default function Footer() {
               <h5 className="text-xl font-bold mb-6">Resources</h5>
               <ul className="list-none footer-links">
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Resource</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource name</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Resource name</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another resource</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Another resource</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Final resource</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Final resource</a>
                 </li>
               </ul>
             </div>
@@ -50,16 +50,16 @@ export default function Footer() {
               <h5 className="text-xl font-bold mb-6">About</h5>
               <ul className="list-none footer-links">
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Team</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Locations</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Locations</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Privacy</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Privacy</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Terms</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Terms</a>
                 </li>
               </ul>
             </div>
@@ -67,13 +67,13 @@ export default function Footer() {
               <h5 className="text-xl font-bold mb-6">Help</h5>
               <ul className="list-none footer-links">
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Support</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Help Center</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact Us</a>
+                  <a href="#" className="border-b border-solid border-transparent hover:border-green-600 hover:text-green-600">Contact Us</a>
                 </li>
               </ul>
             </div>
