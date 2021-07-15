@@ -1,20 +1,27 @@
 import Link from 'next/link';
-
+import WeddHead from '../../components/basic/WeddHead';
+import Header from '../../components/basic/Header';
+import Footer from '../../components/basic/Footer';
 
 const Post = ({result}) => {
     
     return ( result ? <>
+     <WeddHead title="Categories" />
+    < Header/>
     <div className = "flex flex-wrap m-10">
     {result.map((ele,i) =>
     <section key={i} className="w-full max-w-sm m-5 mx-auto overflow-hidden rounded-md shadow-md" >
          <div className="w-full h-10/12" >
-        <img src={ele.imgs_directory_path} className="object-scale-down w-full h-100"  /></div>
-        <h2>{ele.title}</h2>
-        <h2> from {ele.min_price} to {ele.max_price}</h2>      
-        <Link href='/service/[id].js' as={`/service/${ele.id}`}><a>{ele.title}</a></Link>
+        <img src={ele.imgs_directory_path} className="object-scale-down w-full h-100"  /></div>   
+        <Link href='/service/[id].js' as={`/service/${ele.id}`}><div class="text-center p-5 bg-red-50"><a class=" font-sat text-green-900 text-2xl hover:text-green-500" href="/category/1">{ele.title}</a></div></Link>
+        
     </section>
+    
+    
+
 )}
 </div>
+<Footer/>
 </> : <h2>Loading</h2>
 )
 }
