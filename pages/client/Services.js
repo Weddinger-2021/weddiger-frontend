@@ -7,6 +7,7 @@
 export default function services() {
     return (
         <h2>hi</h2>
+        
 //         <div className="flex flex-col h-screen justify-between" >
 //             <WeddHead title="Services" />
 //             < Header />

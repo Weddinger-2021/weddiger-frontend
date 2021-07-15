@@ -32,7 +32,7 @@ export async function getServerSideProps(context) {
     const id = context.query.pid;
     const res = await fetch(`https://weddinger.herokuapp.com/category/services/${id}`)
     const data = await res.json()
-    return {props: {result: data}}
+    return { props: { result: data } }
 }
 
 // alt="Picture of category" height="200px" width="200px"
