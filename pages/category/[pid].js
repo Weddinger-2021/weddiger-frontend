@@ -26,3 +26,5 @@ export async function getServerSideProps(context) {
     const data = await res.json()
     return { props: { result: data } }
 }
+
+// alt="Picture of category" height="200px" width="200px"
